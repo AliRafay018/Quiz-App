@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 207, 149);
+    font-family: sans-serif;
+}
+
+/* .Container{
+    max-height: 100vh;
+} */
+
+.Screen{
+    margin: 10px;
+    display: none;
+    min-height: 30vh;
+    width: 30vw;
+    background-color: bisque ;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 3px 17px;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn{
+    max-height: 5.5vh;
+    background-color: rgb(255, 140, 0);
+    border: 2px solid transparent;
+    outline: none ;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.btn:hover{
+    background-color: rgb(192, 106, 0);
+    border: 2px solid rgb(255, 161, 47);
+    transition: all 0.3s ease;
+}
+
+.Score-Count{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Options-Container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Option{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.Correct{
+    background-color: rgb(164, 252, 164);
+    border: 2px solid rgb(47, 255, 92);
+}
+
+.Incorrect{
+    background-color: rgb(253, 123, 123);
+    border: 2px solid rgb(255, 47, 47);
+}
+
+.Progress-Bar{
+    width: 100%;
+    height: 15px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.Progress{
+    height: 15px;
+    background-color: rgb(255, 140, 0);
+    border-radius: 8px;
+    transition: width 1s ease;
+}
